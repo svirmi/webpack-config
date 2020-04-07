@@ -1,2 +1,2 @@
-##### webpack setup for universal development incl. Typescript 
+##### webpack setup for universal JavaScript development incl. Typescript 
 
