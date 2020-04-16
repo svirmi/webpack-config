@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/Post.js":
+/*!*********************!*\
+  !*** ./src/Post.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Post; });\nclass Post {\n    constructor(title) {\n        this.title = title\n        this.date = new Date()\n    }\n\n    toString() {\n       return JSON.stringify({\n           title: this.title,\n           date: this.date.toJSON()\n       })\n    }\n}\n\n\n//# sourceURL=webpack:///./src/Post.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const post = new Post('Title goes here');\n\nconsole.log('Post to String: ', post.toString());\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./src/Post.js\");\n\n\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Title goes here');\n\nconsole.log('Post to String: ', post.toString());\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
