@@ -11,7 +11,6 @@ function createAnalytics() {
             document.removeEventListener('click', listener);
             isDestroyed = true;
         },
-
         getClicks() {
             if(isDestroyed) {
                 return `Analytics destroyed. Total clicks = ${counter}`;
