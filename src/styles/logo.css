@@ -1,0 +1,7 @@
+.logo {
+    background-image: url("../assets/logo-on-white-bg.png");
+    background-size: cover;
+    min-height: 600px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
