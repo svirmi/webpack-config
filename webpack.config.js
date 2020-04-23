@@ -28,6 +28,10 @@ module.exports = {
             {
                 test: /\.(png|jpg|svg|gif)$/,
                 use: ['file-loader']
+            },
+            {
+                test: /\.csv$/,
+                use: ['csv-loader']
             }
         ]
     }
