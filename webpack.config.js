@@ -13,6 +13,11 @@ module.exports = {
         filename: "[name].[contenthash].bundle.js",
         path: path.resolve(__dirname, 'dist')
     },
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    },
     resolve: {
         extensions: ['.js','.json'],
         alias: {
