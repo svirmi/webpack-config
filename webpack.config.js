@@ -4,6 +4,8 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const isDev = process.env.NODE_ENV === "development";
+
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
@@ -12,7 +14,7 @@ module.exports = {
         analytics: './analytics.js'
     },
     output: {
-        filename: "[name].[contenthash].bundle.js",
+        filename: "[name].[hash].bundle.js",
         path: path.resolve(__dirname, 'dist')
     },
     optimization: {
@@ -21,7 +23,8 @@ module.exports = {
         }
     },
     devServer: {
-        port: 4200
+        port: 4200,
+        hot: isDev
     },
     resolve: {
         extensions: ['.js','.json'],
@@ -53,7 +56,7 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            hmr: true,
+                            hmr: isDev,
                             reload: true
                         }
                     },
