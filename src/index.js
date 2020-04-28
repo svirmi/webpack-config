@@ -7,7 +7,7 @@ import Post from "@models/Post";
 
 const post = new Post('Title goes here', logo);
 
-$('pre').html(post.toString());
+$('pre').addClass('code').html(post.toString());
 
 console.log('json: ', json);
 console.log('csv: ', csv);

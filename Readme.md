@@ -5,3 +5,6 @@ Run ```webpack``` to build project
 ```yarn build``` to build production bundle
 ```yarn watch``` to watch changes
 To see working part of "analytics.js" type in browser console ```analytics.getClicks()```
+
+##### Final build goes to ```dist``` folder.
+##### ```dist/index.html``` contains all necessary stuff to run 
