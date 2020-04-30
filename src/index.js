@@ -1,5 +1,6 @@
 import * as $ from 'jquery';
 import '@/styles/styles.css';
+import './styles/scss.scss';
 import json from '@/assets/json';
 import csv from './assets/research-and-development-survey-2019-csv.csv';
 import logo from '@/assets/logo-on-white-bg.png';
