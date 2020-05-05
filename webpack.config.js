@@ -122,6 +122,27 @@ module.exports = {
                         ]
                     }
                 }
+            },
+            {
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                loader: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: [
+                            [
+                                "@babel/preset-env",
+                                '@babel/preset-typescript',
+                                {
+                                    "useBuiltIns": "entry",
+                                },
+                            ]
+                        ],
+                        plugins: [
+                            '@babel/plugin-proposal-class-properties'
+                        ]
+                    }
+                }
             }
         ]
     }
