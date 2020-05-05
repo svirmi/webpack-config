@@ -116,6 +116,9 @@ module.exports = {
                                     "useBuiltIns": "entry",
                                 },
                             ]
+                        ],
+                        plugins: [
+                            '@babel/plugin-proposal-class-properties'
                         ]
                     }
                 }
