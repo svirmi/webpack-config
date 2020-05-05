@@ -33,7 +33,7 @@ module.exports = {
     mode: 'development',
     entry: {
         main: ['@babel/polyfill', './index.js'],
-        analytics: './analytics.js'
+        analytics: './analytics.ts'
     },
     output: {
         filename: filename('js'),
@@ -41,7 +41,7 @@ module.exports = {
     },
     optimization: optimization(),
     devServer: {
-        port: 4200,
+        port: 4444,
         hot: isDev
     },
     resolve: {
@@ -130,13 +130,8 @@ module.exports = {
                     loader: "babel-loader",
                     options: {
                         presets: [
-                            [
                                 "@babel/preset-env",
                                 '@babel/preset-typescript',
-                                {
-                                    "useBuiltIns": "entry",
-                                },
-                            ]
                         ],
                         plugins: [
                             '@babel/plugin-proposal-class-properties'
